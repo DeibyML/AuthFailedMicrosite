@@ -1,0 +1,17 @@
+mat-card {
+  margin: 2em;
+}
+
+span.left-icon {
+  color: #da291c;
+  font-size: 40px;
+}
+
+button[mat-raised-button] {
+  width: 33%;
+  background: #da291c;
+  border-radius: 20px;
+  margin: 0 6px;
+  height: 1.6em;
+  line-height: 0;
+}
