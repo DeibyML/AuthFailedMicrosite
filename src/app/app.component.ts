@@ -10,7 +10,7 @@ import { ButtonsInfo } from './models/ButtonsInfo';
 
 export class AppComponent {
 
-  message = 'La autenticación ha fallado debido a que no se respondieron las preguntas de seguridad correctamente.';
+  message = 'No fue posible realizar el proceso de autenticación';
   secondMessage = 'Por favor, verificar de nuevo';
   dataOk = false;
   dataParams = new ButtonsInfo();

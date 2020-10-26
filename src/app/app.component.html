@@ -1,18 +1,23 @@
-<mat-card>
-  <mat-card-header>
-    <div mat-card-avatar>
-      <span class="material-icons left-icon">
-        report_problem
-      </span>
-    </div>
-    <mat-card-title>{{ message }}</mat-card-title>
-    <mat-card-subtitle>{{ secondMessage }}</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-actions *ngIf="dataOk">
-    <div style="display: flex;">
-      <button *ngIf="dataParams.Button1 && dataParams.Button1 !== ''" (click)="redirectTo(dataParams.ReturnUrl1)" routerLinkActive="router-link-active"  mat-raised-button color="warn">{{ dataParams.Button1 }}</button>
-      <button *ngIf="dataParams.Button2 && dataParams.Button2 !== ''" (click)="redirectTo(dataParams.ReturnUrl2)" mat-raised-button color="warn">{{ dataParams.Button2 }}</button>
-      <button *ngIf="dataParams.Button3 && dataParams.Button3 !== ''" (click)="redirectTo(dataParams.ReturnUrl3)" mat-raised-button color="warn">{{ dataParams.Button3 }}</button>
-    </div>
-  </mat-card-actions>
-</mat-card>
+<div class="container">
+  <mat-card>
+    <mat-card-header class="translate-13">
+      <div mat-card-avatar>
+        <span class="material-icons left-icon">
+          report_problem
+        </span>
+      </div>
+      <mat-card-title>{{ message }}</mat-card-title>
+      <mat-card-subtitle>{{ secondMessage }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions class="translate-13">
+      <div style="display: flex;">
+        <button *ngIf="dataParams.Button1 && dataParams.Button1 !== ''" (click)="redirectTo(dataParams.ReturnUrl1)"
+          routerLinkActive="router-link-active" mat-raised-button color="warn">{{ dataParams.Button1 }}</button>
+        <button *ngIf="dataParams.Button2 && dataParams.Button2 !== ''" (click)="redirectTo(dataParams.ReturnUrl2)"
+          mat-raised-button color="warn">{{ dataParams.Button2 }}</button>
+        <button *ngIf="dataParams.Button3 && dataParams.Button3 !== ''" (click)="redirectTo(dataParams.ReturnUrl3)"
+          mat-raised-button color="warn">{{ dataParams.Button3 }}</button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>
