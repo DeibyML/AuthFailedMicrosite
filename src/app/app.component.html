@@ -11,7 +11,7 @@
     </mat-card-header>
     <mat-card-actions class="translate-13">
       <div style="display: flex;">
-        <button *ngIf="dataParams.Button1 && dataParams.Button1 !== ''" (click)="redirectTo(dataParams.ReturnUrl1)"
+        <button *ngIf="dataParams.Button1 && dataParams.Button1 !== ''" (click)="redirectTopTo(dataParams.ReturnUrl1)"
           routerLinkActive="router-link-active" mat-raised-button color="warn">{{ dataParams.Button1 }}</button>
         <button *ngIf="dataParams.Button2 && dataParams.Button2 !== ''" (click)="redirectTo(dataParams.ReturnUrl2)"
           mat-raised-button color="warn">{{ dataParams.Button2 }}</button>

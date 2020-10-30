@@ -55,5 +55,8 @@ export class AppComponent {
   }
 
   // Método que redirigue la página a cada micrositio.
+  redirectTopTo = (url) => window.top.location.replace(url);
+
+  // Método que redirigue la página a cada micrositio.
   redirectTo = (url: string) => location.href = url;
 }
